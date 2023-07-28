@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # shellcheck disable=SC2009
-
+script_pid=$$
 # script that display lines containing the bash word
-ps aux | grep bash | grep -v grep
+ps aux | grep bash | grep -v grep | grep -v "$script_pid"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Infinite loop
+# infinite loop that iterates
 while true; do
   echo "To infinity and beyond"
   sleep 2

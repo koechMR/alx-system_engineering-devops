@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-# Run the "4-to_infinity_and_beyond" script in the background
+# run the 4-to_infinity_and_beyond script in the background
 ./4-to_infinity_and_beyond &
-
-# Wait for the user to trigger the termination
 read -r -p "Press Enter to stop the process..."
 pkill 4-to_infinity_and_beyond
 echo "Terminated"
