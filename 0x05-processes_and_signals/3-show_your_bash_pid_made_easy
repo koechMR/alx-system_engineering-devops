@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-
 # get the PID of the script (3-show_your_bash_pid_made_easy)
+
 pgrep bash -l
