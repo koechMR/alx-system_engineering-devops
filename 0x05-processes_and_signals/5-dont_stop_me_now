@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Run the "4-to_infinity_and_beyond" script in the background
+./4-to_infinity_and_beyond &
+
+pid=$!
+
+read -p "Press Enter to stop the process..."
+kill "$pid"
+echo "Terminated"
