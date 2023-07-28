@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get the PID of the script (3-show_your_bash_pid_made_easy)
+script_pid=$$
+process_list=$(pgrep -l bash)
+
+while read -r process_line; do
+  pid=$(echo "$process_line" | awk '{print $1}')
+  name=$(echo "$process_line" | awk '{print $2}')
+
+  if [ "$pid" -ne "$script_pid" ]; then
+    echo "$pid $name"
+  fi
+done <<< "$process_list"
