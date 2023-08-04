@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#script that displays all active ipv4 on the machine it's executed on
+#script that displays all active ipv4 when the machine it's executed on
 
 active_ips=$(ip -4 addr | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 echo "$active_ips"
