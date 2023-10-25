@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# bash script that uses ssh to connect to a server usign public key
+# bash script that uses ssh to connect to a server with key
 
 ssh -i ~/.ssh/school ubuntu@34.201.174.77
